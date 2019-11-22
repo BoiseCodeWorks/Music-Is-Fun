@@ -39,6 +39,7 @@ class SongsService {
       .get()
       .then(res => {
         //TODO What are you going to do with this result
+        let results = res.results.map(rawData => new Song(rawData));
       })
       .catch(error => {
         throw new Error(error.response.data.message);

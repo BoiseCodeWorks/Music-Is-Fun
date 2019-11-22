@@ -1,11 +1,7 @@
 import SongsController from "./Controllers/SongsController.js";
 
 class App {
-  constructor() {
-    this.controllers = {
-      SongsController: new SongsController()
-    }
-  }
+  songsController = new SongsController();
 }
 
 window["app"] = new App();
