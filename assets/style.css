@@ -1,0 +1,35 @@
+body {
+  height: 100%;
+  margin: auto;
+  background-color: chocolate;
+}
+
+header {
+  height: 20%;
+  margin: auto;
+   background-image: url("https://media.istockphoto.com/videos/close-up-of-wall-made-of-wooden-planks-4k-video-id941413352?s=640x640");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px;
+}
+
+.bannerStyle {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: xx-large;
+}
+
+.searchStyle {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 70%;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+}
