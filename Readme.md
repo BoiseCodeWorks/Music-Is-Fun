@@ -45,7 +45,8 @@ Lastly you will want to create the `removeSong`, this will need the song id and 
 Here are some ideas of what your app might start out looking like
 
 <div>
-  <img class="img-responsive" src="https://bcw.blob.core.windows.net/public/img/mytunes.jpg" />
+  <img class="img-responsive" src="/Mobile.png" />
+  <img class="img-responsive" src="/Destop.png" />
 </div>
 
 ## Requirements
