@@ -45,8 +45,8 @@ Lastly you will want to create the `removeSong`, this will need the song id and 
 Here are some ideas of what your app might start out looking like
 
 <div>
-  <img class="img-responsive" src="/Mobile.png" />
-  <img class="img-responsive" src="/Desktop.png" />
+  <img class="img-responsive" src="/MobileView.png" />
+  <img class="img-responsive" src="/DesktopView.png" />
 </div>
 
 ## Requirements
