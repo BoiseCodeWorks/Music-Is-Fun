@@ -42,7 +42,7 @@ class SongsService {
         let results = res.results.map(rawData => new Song(rawData));
       })
       .catch(error => {
-        throw new Error(error.response.data.message);
+        throw new Error(error);
       });
   }
 
