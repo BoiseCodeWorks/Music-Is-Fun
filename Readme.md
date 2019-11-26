@@ -46,7 +46,7 @@ Here are some ideas of what your app might start out looking like
 
 <div>
   <img class="img-responsive" src="/MobileView.png" />
-  <img class="img-responsive" src="/DesktopView.png" />
+  <img class="img-responsive" src="/DestopView.png.png" />
 </div>
 
 ## Requirements
