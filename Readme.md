@@ -56,8 +56,10 @@ Here are some ideas of what your app might start out looking like
   - Bootstrap is utilized to provide styling to the page
   - Each property of the song object is displayed (title, artist, price, album art, preview (hint: "html audio tag"))
 - Functionality:
-
   - A new search will clear out old results
+  - Playlist is automatically rendered on page load
+  - Users can add songs to playlist
+  - Users can remove songs from playlist
 
 ### BONUS CHALLENGES
 
