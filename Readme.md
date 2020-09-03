@@ -50,8 +50,6 @@ Here are some ideas of what your app might start out looking like
 </div>
 
 ## Requirements
-
-- Visualization:
   - All songs are rendered when search button is clicked
   - Bootstrap is utilized to provide styling to the page
   - Each property of the song object is displayed (title, artist, price, album art, preview (hint: "html audio tag"))

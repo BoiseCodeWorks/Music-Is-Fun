@@ -1,18 +1,8 @@
+import { ProxyState } from "../AppState.js";
 import Song from "../Models/Song.js";
-import store from "../store.js";
-
-// @ts-ignore
-let _sandBox = axios.create({
-  //TODO Change YOURNAME to your actual name
-  baseURL: "//bcw-sandbox.herokuapp.com/api/YOURNAME/songs"
-});
+import { sandBoxApi } from "./AxiosService.js";
 
 class SongsService {
-  constructor() {
-    // NOTE this will get your songs on page load
-    this.getMySongs();
-  }
-
   /**
    * Takes in a search query and retrieves the results that will be put in the store
    * @param {string} query
@@ -23,8 +13,7 @@ class SongsService {
     // @ts-ignore
     $.getJSON(url)
       .then(res => {
-        let results = res.results.map(rawData => new Song(rawData));
-        store.commit("songs", results);
+        ProxyState.songs = res.results.map(rawData => new Song(rawData));
       })
       .catch(err => {
         throw new Error(err);
@@ -34,16 +23,10 @@ class SongsService {
   /**
    * Retrieves the saved list of songs from the sandbox
    */
-  getMySongs() {
-    _sandBox
-      .get()
-      .then(res => {
-        //TODO What are you going to do with this result
-        let results = res.data.data.map(rawData => new Song(rawData));
-      })
-      .catch(error => {
-        throw new Error(error);
-      });
+  async getMySongs() {
+    let res = await sandBoxApi.get()
+    //TODO What are you going to do with this result
+    let results = res.data.data.map(rawData => new Song(rawData));
   }
 
   /**

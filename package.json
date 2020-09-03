@@ -1,0 +1,18 @@
+{
+  "name": "cw-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "bcw-serve",
+    "sass": "sass --watch assets/scss/main.scss:assets/style/main.css"
+  },
+  "author": "Jake Overall <joverall22@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}

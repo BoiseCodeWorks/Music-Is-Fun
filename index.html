@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>Music is Fun</title>
-  </head>
 
-  <body class="container-fluid">
-    <header class="row">
-      <div class="col-12 bannerStyle">
-        <p>Music is Fun</p>
-      </div>
-      <div class="offset-8 col-4">
-        <form onsubmit="app.songsController.search(event)">
-          <input
-            type="text"
-            class="form-control"
-            name="query"
-            placeholder="Search For Music"
-          />
-          <button class="btn btn-success mt-1 form-control" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>music-is-fun</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
+                <span class="ml-2">music-is-fun</span>
+            </a>
+        </nav>
     </header>
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-12 bannerStyle">
+                <p>Music is Fun</p>
+            </div>
+            <div class="offset-8 col-4">
+                <form onsubmit="app.songsController.search(event)">
+                    <input type="text" class="form-control" name="query" placeholder="Search For Music" />
+                    <button class="btn btn-success mt-1 form-control" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </section>
 
-    <main class="row">
-      <div class="col-6">
-        <h3 class="text-center">Search Results</h3>
-        <div id="songs" class="col-12 m-0">
-          <!-- template to generate -->
-        </div>
-      </div>
-      <div class="col-6">
-        <h3 class="text-center">Playlist</h3>
-        <div class="col-12 m-0" id="playlist">
-          <!-- template for playlist -->
-        </div>
-      </div>
+        <section class="row">
+            <div class="col-6">
+                <h3 class="text-center">Search Results</h3>
+                <div id="songs" class="col-12 m-0">
+                    <!-- template to generate -->
+                </div>
+            </div>
+            <div class="col-6">
+                <h3 class="text-center">Playlist</h3>
+                <div class="col-12 m-0" id="playlist">
+                    <!-- template for playlist -->
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row text-center">
+            <div class="col">
+                <p><small>Made with love by Codeworks</small></p>
+            </div>
+        </div>
+    </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
-      integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
+        integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="app/main.js" type="module"></script>
-  </body>
+</body>
+
 </html>
