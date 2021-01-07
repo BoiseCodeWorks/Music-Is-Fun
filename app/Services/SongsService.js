@@ -24,9 +24,7 @@ class SongsService {
    * Retrieves the saved list of songs from the sandbox
    */
   async getMySongs() {
-    let res = await sandBoxApi.get()
     //TODO What are you going to do with this result
-    let results = res.data.data.map(rawData => new Song(rawData));
   }
 
   /**
