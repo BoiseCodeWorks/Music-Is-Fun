@@ -1,47 +1,37 @@
-$body-bg: #f2f2f2;
+$body-bg: #e5e5e5;
+$primary: #3ba5dc;
+$secondary: #8392ab;
+$success: #00f867;
+$info: #cb0c9f;
+$warning: #fbcf33;
+$danger: #ea0606;
+$light: #e9ecef;
+$dark: #111927;
+$grey: #cbcbcb;
 
-$primary: #3BA5DC;
-$secondary: #FF3697;
-$danger: #EB5757;
-$success: #27AE60;
-$warning: #FF7F50;
-$info: #00C9BD;
-$dark: #272727;
-
-$blue: blue;
-$indigo: indigo;
-$purple: purple;
-$pink: pink;
-$red: red;
-$orange: orange;
-$yellow: yellow;
-$green: green;
-$teal: teal;
-$cyan: cyan;
-$white: white;
-$gray: #4F4F4F;
-$gray-dark: darkslategray;
+$font-sans-serif: Open Sans;
+$font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 100%, 0));
 
 $colors: (
-  "blue": $blue,
-  "indigo": $indigo,
-  "purple": $purple,
-  "pink": $pink,
-  "red": $red,
-  "orange": $orange,
-  "yellow": $yellow,
-  "green": $green,
-  "teal": $teal,
-  "cyan": $cyan,
-  "white": $white,
-  "gray": $gray,
-  "gray-dark": $gray-dark,
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "success": $success,
+  "warning": $warning,
+  "info": $info,
+  "dark": $dark,
+  "grey": $grey,
 );
 
 $color-ranges: (
   0: 0,
+  5: 5,
   10: 10,
+  15: 15,
   20: 20,
+  25: 25,
   30: 30,
-  40: 40
-)
+  35: 35,
+  40: 40,
+);

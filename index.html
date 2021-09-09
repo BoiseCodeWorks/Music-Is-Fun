@@ -2,66 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style/main.css">
-    <title>music-is-fun</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="shortcut icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <title>music-is-fun</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">music-is-fun</span>
-            </a>
-        </nav>
-    </header>
-    <main class="container-fluid">
-        <section class="row">
-            <div class="col-12 bannerStyle">
-                <p>Music is Fun</p>
-            </div>
-            <div class="offset-8 col-4">
-                <form onsubmit="app.songsController.search(event)">
-                    <input type="text" class="form-control" name="query" placeholder="Search For Music" />
-                    <button class="btn btn-success mt-1 form-control" type="submit">
-                        Search
-                    </button>
-                </form>
-            </div>
-        </section>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select align-items-center">
+      <a class="navbar-brand ms-3 d-flex align-items-center" href="#">
+        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+          loading="lazy">
+        <span class="ms-2">Music is Fun</span>
+      </a>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <section class="row my-3">
+      <div class="col-lg-6 m-auto">
+        <form onsubmit="app.songsController.search(event)" class="d-flex align-items-center bg-dark elevation-2 rounded p-1 shadow">
+          <input type="text" class="form-control" name="query" placeholder="Search For Music" />
+          <button class="btn btn-dark" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </section>
 
-        <section class="row">
-            <div class="col-6">
-                <h3 class="text-center">Search Results</h3>
-                <div id="songs" class="col-12 m-0">
-                    <!-- template to generate -->
-                </div>
-            </div>
-            <div class="col-6">
-                <h3 class="text-center">Playlist</h3>
-                <div class="col-12 m-0" id="playlist">
-                    <!-- template for playlist -->
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="container-fluid bg-dark text-light">
-        <div class="row text-center">
-            <div class="col">
-                <p><small>Made with love by Codeworks</small></p>
-            </div>
+    <section class="row">
+      <div class="col-lg-6">
+        <h3 class="text-center">Search Results</h3>
+        <div id="songs" class="col-12 m-0">
+          <!-- api songs -->
         </div>
-    </footer>
+      </div>
+      <div class="col-lg-6">
+        <h3 class="text-center">Playlist</h3>
+        <div class="col-12 m-0" id="playlist">
+          <!-- template for playlist -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid bg-dark text-light">
+    <div class="row text-center">
+      <div class="col">
+        <p><small>Made with 💖 by Codeworks</small></p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
-        integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="app/main.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
+    integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script src="app/main.js" type="module"></script>
 </body>
 
 </html>
