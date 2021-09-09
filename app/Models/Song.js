@@ -7,7 +7,7 @@ export default class Song {
     this.album = data.collectionName || data.album;
     this.price = data.trackPrice || data.price;
     this.preview = data.previewUrl || data.preview;
-    this.id = data.trackId || data.id;
+    this.id = data.trackId?.toString() || data.id;
   }
 
   get Template() {
